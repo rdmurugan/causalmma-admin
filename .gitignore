@@ -1,0 +1,29 @@
+# Config with secrets
+config.php
+
+# Backups
+*.bak
+*.backup
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+error_log
+
+# Temp files
+tmp/
+temp/
+cache/
+
+# Don't commit config with real credentials
+# Instead use config.example.php
