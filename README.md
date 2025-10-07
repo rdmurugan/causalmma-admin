@@ -35,18 +35,28 @@ Standalone admin panel for business operations: manage organizations, API keys, 
 
 ---
 
-## 🚀 Quick Deployment (5 minutes)
+## 🚀 Deployment
 
-### Step 1: Configure
+### Production Deployment
+
+**For production deployment to free hosting with https://api.causalmma.com:**
+
+📖 **See [PRODUCTION_DEPLOYMENT.md](PRODUCTION_DEPLOYMENT.md)** for complete guide with:
+- Security configuration
+- InfinityFree setup
+- HTTPS configuration
+- Troubleshooting
+
+### Quick Start (Local Testing)
 
 ```bash
-# Copy example config
-cp config.example.php config.php
+# Copy production config template
+cp config.production.php config.php
 
 # Edit config.php:
-# 1. Set API_BASE_URL to your Render API URL
+# 1. Set API_BASE_URL: https://api.causalmma.com (production)
 # 2. Set ADMIN_API_KEY (from generate_admin_key.py)
-# 3. Change ADMIN_PASSWORD_HASH
+# 3. Change ADMIN_PASSWORD_HASH (generate with: php -r "echo password_hash('PASSWORD', PASSWORD_BCRYPT);")
 ```
 
 Generate password hash:
